@@ -6,6 +6,18 @@ window.addEventListener('load', () => {
 	let locationTimezone = document.querySelector('.location-timezone');
 	let temperatureSection = document.querySelector('.temperature');
 	const temperatureSpan = document.querySelector('.temperature span');
+	let daysOfWeek = document.querySelector('.day');
+
+	let day = new Date();
+	let weekday = new Array(7);
+	weekday[0] = 'Понеділок';
+	weekday[1] = 'Вівторок';
+	weekday[2] = 'Середа';
+	weekday[3] = 'Четвер';
+	weekday[4] = "П'ятниця";
+	weekday[5] = 'Субота';
+	weekday[6] = 'Неділя';
+	daysOfWeek.textContent = weekday[day.getDay() - 1];
 
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition((position) => {
@@ -26,7 +38,8 @@ window.addEventListener('load', () => {
 					temperatureDegree.textContent = temperature;
 					temperatureDescription.textContent = summary;
 
-					locationTimezone.textContent = data.timezone;
+					// locationTimezone.textContent = data.timezone;
+					locationTimezone.textContent = 'Lviv';
 
 					let celsius = (temperature - 32) * (5 / 9);
 					temperatureDegree.textContent = Math.floor(celsius);
