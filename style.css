@@ -37,3 +37,12 @@ body {
 .degree-section h2 {
 	font-size: 40px;
 }
+.board {
+	width: 340px;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
