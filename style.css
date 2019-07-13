@@ -24,6 +24,7 @@ body {
 }
 .temperature {
 	flex-direction: column;
+	align-items: center;
 }
 .degree-section {
 	display: flex;
@@ -31,7 +32,7 @@ body {
 	cursor: pointer;
 }
 .degree-section span {
-	margin: 10px;
+	margin: 0px;
 	font-size: 30px;
 }
 .degree-section h2 {
@@ -45,4 +46,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+}
+.location-timezone {
+	padding-right: 20px;
 }
