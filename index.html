@@ -8,24 +8,72 @@
     <title>Wheather</title>
 </head>
 <body>
-    <div class = "board">
-        <div class = 'location'>
-            <h1 class = location-timezone>Lviv</h1>
-            <canvas class='icon' width="128" height="128"></canvas>
-        </div>
-        <div class = 'temperature'>
-            <h2 class='day'>Today</h2>
-            <div class = 'degree-section'>
-                    <h2 class = 'temperature-degree'>27</h2>
-                    <span>C</span>
+    <div class='board'>
+        <div class = "board-day">
+            <div class = 'location'>
+                <h1 class = location-timezone>Lviv</h1>
+                <canvas class='icon' width="128" height="128"></canvas>
             </div>
-            
-            <div class = 'temperature-description'>It's hot
+            <div class = 'temperature'>
+                <h2 class='day'>Today</h2>
+                <div class = 'degree-section'>
+                        <h2 class = 'temperature-degree'>27</h2>
+                        <span>C</span>
+                </div>
+                
+                <div class = 'temperature-description'>It's hot
+                </div>
+            </div>
+        </div>
+        <div class = 'board-week'>
+            <h1 class= "board-title">Weather for a week</h1>
+            <div class='days'>
+                <div class='days-style'>
+                    <h2 class='day-week'>Mon</h2>
+                    <canvas class='icon' id='icon1'width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree1Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree1Min text-temp'>27</h2>
+
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Tue</h2>
+                    <canvas class='icon' id='icon2' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree2Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree2Min text-temp'>27</h2>
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Wed</h2>
+                    <canvas class='icon'id='icon3' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree3Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree3Min text-temp'>27</h2>
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Thu</h2>
+                    <canvas class='icon' id='icon4' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree4Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree4Min text-temp'>27</h2>
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Fri</h2>
+                    <canvas class='icon' id='icon5' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree5Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree5Min text-temp'>27</h2>
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Sat</h2>
+                    <canvas class='icon' id='icon6' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree6Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree6Min text-temp'>27</h2>
+                </div>
+                <div class='days-style'>
+                    <h2 class='day-week'>Sun</h2>
+                    <canvas class='icon' id='icon7' width="50" height="50"></canvas>
+                    <h2 class = 'temperature-degree7Max text-temp'>27</h2>
+                    <h2 class = 'temperature-degree7Min text-temp'>27</h2>
+                </div>
             </div>
         </div>
     </div>
-   
-
     <script src="skycons.js"></script>
     <script src="app.js"></script>
     </body>
